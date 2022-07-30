@@ -1,4 +1,4 @@
-# Hoymiles Solar
+# SOLARMAN Solar
 
 [![Docker Repository on Quay](https://quay.io/repository/lagomes/hoymiles_notifications/status "Docker Repository on Quay")](https://quay.io/repository/lagomes/hoymiles_notifications)
 
