@@ -1,6 +1,6 @@
 # SOLARMAN Solar
 
-[![Docker Repository on Quay](https://quay.io/repository/lagomes/hoymiles_notifications/status "Docker Repository on Quay")](https://quay.io/repository/lagomes/hoymiles_notifications)
+[![Docker Repository on Quay](https://quay.io/repository/lagomes/solarman_notifications/status "Docker Repository on Quay")](https://quay.io/repository/lagomes/solarman_notifications)
 
 ### Run command
 
