@@ -8,8 +8,13 @@
     export TOKEN='1111111111:AAFxLoSSPIVOqZo-39o6UiLK9sMGlmWu4TA'
 
 # Run
-python notifications.py
+    python notifications.py
 
-# Run container command 
+# Docker
 
-podman run -it --name notifications --rm -e USUARIO='your username' -e LINK='https://global.hoymiles.com/platform/login' -e SENHA='your password' -e CHAT_ID=-660131018 -e TOKEN='111111111:AAFxLoSSPIVOqZo-39o6UiLK9sMGlmWu4TA' quay.io/lagomes/hoymiles_notifications:v1
+## Build
+    buildah build -t solarmanpv:v1 
+## Run container from localhost
+    podman run -it --name notifications --rm -e USUARIO='your username' -e LINK='https://global.hoymiles.com/platform/login' -e SENHA='your password' -e CHAT_ID=-660131018 -e TOKEN='111111111:AAFxLoSSPIVOqZo-39o6UiLK9sMGlmWu4TA' localhost/solarmanpv:v1
+# Run container from repository 
+    podman run -it --name notifications --rm -e USUARIO='your username' -e LINK='https://global.hoymiles.com/platform/login' -e SENHA='your password' -e CHAT_ID=-660131018 -e TOKEN='111111111:AAFxLoSSPIVOqZo-39o6UiLK9sMGlmWu4TA' quay.io/lagomes/hoymiles_notifications:v1
