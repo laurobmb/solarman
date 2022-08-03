@@ -23,9 +23,9 @@ class sistemasolar():
         python_button = self.browser.find_elements_by_xpath('/html/body/div[2]/div/div[2]/div/div[2]/div/div/div/button')[0]
         python_button.click()
         time.sleep(4)    
-        #python_button = self.browser.find_elements_by_xpath('/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button')[0]
-        #python_button.click()
-        #time.sleep(4)
+        python_button = self.browser.find_elements_by_xpath('/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button')[0]
+        python_button.click()
+        time.sleep(4)
         ################# Site com aviso de manutenção
 
         python_button = self.browser.find_elements_by_xpath('//*[@id="email"]')[0]
