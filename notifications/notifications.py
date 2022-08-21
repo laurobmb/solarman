@@ -29,11 +29,21 @@ class sistemasolar():
 
         ################# Site com aviso de manutenção
         time.sleep(10)    
-        python_button = self.browser.find_elements_by_xpath('/html/body/div[2]/div/div[2]/div/div[2]/div/div/div/button')[0]
-        python_button.click()
-        time.sleep(4)    
-        python_button = self.browser.find_elements_by_xpath('/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button')[0]
-        python_button.click()
+        
+        try:
+            python_button = self.browser.find_elements_by_xpath('/html/body/div[2]/div/div[2]/div/div[2]/div/div/div/button')[0]
+            python_button.click()
+        except:
+            print('erro')
+        
+        time.sleep(4)  
+
+        try:
+            python_button = self.browser.find_elements_by_xpath('/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button')[0]
+            python_button.click()
+        except:
+            print('erro')
+            
         time.sleep(4)
         ################# Site com aviso de manutenção
 
