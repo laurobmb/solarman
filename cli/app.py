@@ -25,7 +25,7 @@ class sistemasolar():
             python_button = self.browser.find_elements_by_xpath('/html/body/div[2]/div/div[2]/div/div[2]/div/div/div/button')[0]
             python_button.click()
         except:
-            print('erro')
+            print('Não encrontrou o primeiro banner')
         
         time.sleep(4)  
 
@@ -33,7 +33,7 @@ class sistemasolar():
             python_button = self.browser.find_elements_by_xpath('/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button')[0]
             python_button.click()
         except:
-            print('erro')
+            print('Não encrontrou o segundo banner')
             
         time.sleep(4)
         ################# Site com aviso de manutenção
